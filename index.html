@@ -1,62 +1,197 @@
-<!DOCTYPE html>
-<html lang="fr">
-
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>mr achraf el hilali</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ikram El Hilali — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/logo ikram.png">
 </head>
-
 <body>
-    <header>
-        <section>
-            <h1 id="Titre">Achraf EL HILALI</h1>
-            <p>A passionate Software Engineer specializing in AL, Dynamics 365, and modern web apps</p>
-        </section>
+  <div class="wrap">
+    <header class="header">
+      <div class="brand">
+        <div class="avatar">
+          <img src="assets/ikram.jpg" alt="Ikram El Hilali">
+        </div>
+        <div>
+          <h1>Ikram El Hilali</h1>
+          <div class="muted">Software Engineer — AL · Dynamics 365 · Web Apps</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+        <a class="cta" href="#download">Download CV 📥</a>
+      </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>Expérience</h2>
-            <article>
-                <h3>Janvier 2025 – Février 2025, Semaka</h3>
-                <p>Stage en maintenance de machine</p>
-            </article>
-            <article>
-                <h3>Février 2025 – Mars 2025, AFM</h3>
-                <p>Stage opérateur machine</p>
-            </article>
+    <main class="grid">
+      <div>
+        <section id="home" class="hero">
+          <div class="hero-left">
+            <div class="kicker">Hello — I'm Ikram</div>
+            <h2 class="title">El Hilali <span class="accent">Ikram</span></h2>
+            <p class="sub">A passionate Software Engineer specializing in AL, Dynamics 365, and modern web applications. I build maintainable solutions and elegant user experiences.</p>
+
+            <div class="stats" aria-hidden="true">
+              <div class="stat"><b>1</b><span class="muted"> Years and 4 months of experience.</span></div>
+              <div class="stat"><b>4</b><span class="muted"> Projects.</span></div>
+              <div class="stat"><b>20</b><span class="muted"> Technologies.</span></div>
+            </div>
+
+            <section id="services">
+              <h2>Services</h2>
+              <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;">
+                <div class="project">Business & Dynamics 365 Services</div>
+                <div class="project">UI/UX Design</div>
+                <div class="project">Web & App Development</div>
+                <div class="project">Technical Solutions & Support</div>
+              </div>
+            </section>
+
+            <section id="work">
+              <h2>Selected Projects</h2>
+              <div class="projects">
+                <article class="project">
+                  <h3 style="margin:0 0 6px">Caftan Oriental — Web App</h3>
+                  <p class="muted" style="margin:0">Next.js + Node + PHP API · Inventory & Booking</p>
+                </article>
+                <article class="project">
+                  <h3 style="margin:0 0 6px">Dynamics 365 Customizations</h3>
+                  <p class="muted" style="margin:0">Plugins, JS form logic, AL reports</p>
+                </article>
+                <article class="project project-full" style="grid-column:span 2">
+                  <h3 style="margin:0 0 6px">UX Cases & Small Tools</h3>
+                  <p class="muted" style="margin:0">Design experiments and internal tools</p>
+                </article>
+              </div>
+            </section>
+
+            <section id="resume">
+              <h2>Experience</h2>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-date">Jul 2024 — Present</div>
+                  <div class="timeline-body">
+                    <b>Consultante Technique — Dynamics 365 (Prodware)</b>
+                    <div class="muted">Customizations, JS → Plugins, AL reporting</div>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-date">Apr 2024 — May 2024</div>
+                  <div class="timeline-body">
+                    <b>Web Developer — ELHALLAOUI SARL</b>
+                    <div class="muted">Frontend & small backend features</div>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-date">Aug 2023 — Sep 2023</div>
+                  <div class="timeline-body">
+                    <b>Web Developer — Fondation Attawfiq</b>
+                    <div class="muted">Internship and small projects</div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h2>Education</h2>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-date">Nov 2022 — Jun 2024</div>
+                  <div class="timeline-body"><b>Licence Diploma — Computer Science</b><div class="muted">Faculty of Science Ain Chock</div></div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-date">Oct 2021 — 2022</div>
+                  <div class="timeline-body"><b>DUT — Computer Engineering</b><div class="muted">ESTM</div></div>
+                </div>
+              </div>
+            </section>
+
+          </div>
         </section>
-        <hr>
+
         <section>
-            <h2>Éducation</h2>
-            <article>
-                <h3>2022–2023, Lycée Benochohaid</h3>
-                <p>Baccalauréat en sciences physiques et chimiques</p>
-            </article>
-            <article>
-                <h3>2023–2025, GM</h3>
-                <p>Génie Mécanique — Option Étude, Méthode et Fabrication Mécanique</p>
-            </article>
+          <h2>Skills</h2>
+          <div class="skills">
+            <div class="skill">AL</div>
+            <div class="skill">Dynamics 365</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React / Next.js</div>
+            <div class="skill">HTML & CSS</div>
+            <div class="skill">PHP & MySQL</div>
+            <div class="skill">SQL</div>
+            <div class="skill">UX / UI Design</div>
+          </div>
         </section>
-        <hr>
+
         <section>
-            <h2>Compétences</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>AutoCAD</li>
-                <li>SolidWorks</li>
-                <li>CATIA</li>
-            </ul>
+          <h2>About Me</h2>
+          <p>I’m Ikram, a passionate software engineer who loves solving problems, learning new technologies, and creating meaningful digital experiences. I value clarity, collaboration, and continuous growth.</p>
         </section>
-        <!-- <button  onclick="window.location.href='deuxiemepage.html'">Click here</button> -->
+
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3 style="margin-top:0">Contact</h3>
+          <div class="contact-list">
+            <div class="contact-item"><strong>Phone</strong><br>0711708435</div>
+            <div class="contact-item"><strong>Email</strong><br><a href="mailto:ikramelhilali21@gmail.com">ikramelhilali21@gmail.com</a></div>
+            <div class="contact-item"><strong>GitHub</strong><br><a href="https://github.com/Ikramelhilali" target="_blank">github.com/Ikramelhilali</a></div>
+            <div class="contact-item"><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/in/ikram-el-hilali-537a8724b/" target="_blank">linkedin.com/in/ikram-el-hilali</a></div>
+          </div>
+
+          <hr style="margin:12px 0;border:none;height:1px;background:rgba(255,255,255,0.03)">
+
+          <h3 style="margin:0 0 8px">Quick Contact</h3>
+          <form id="contactForm" class="contact-form" onsubmit="handleContact(event)">
+
+            <input required name="name" placeholder="Your name" type="text">
+
+            <input required name="email" placeholder="Your email" type="email">
+
+            <select name="service" id="service" required>
+              <option value="" disabled selected hidden>Choose a service</option>
+              <option value="d365">Dynamics 365 Consulting</option>
+              <option value="web">Web & App Development</option>
+              <option value="uiux">UI/UX Design</option>
+            </select>
+
+            <textarea name="message" placeholder="Type your message..."></textarea>
+
+            <div style="display:flex;gap:55px;margin-top:6px">
+              <button class="btn" type="submit">Send message</button>
+              <a class="btn" id="download" href="#" onclick="downloadCV(event)">Download CV</a>
+            </div>
+
+          </form>
+        </div>
+
+        <div style="height:18px"></div>
+        <div class="card">
+          <h3 style="margin-top:0">Languages</h3>
+          <div class="muted">English · French · Arabic (Darija)</div>
+          <hr style="margin:12px 0;border:none;height:1px;background:rgba(255,255,255,0.03)">
+          <h3 style="margin:0 0 8px">Availability</h3>
+          <div class="muted">Open for internships & junior-mid roles</div>
+        </div>
+
+        <footer>
+          Designed by Ikram • © <span id="year"></span>
+        </footer>
+      </aside>
     </main>
-
-    <footer>
-        <p>&copy; 2025 Achraf El Hilali. Tous droits réservés.</p>
-    </footer>
+  </div>
+  <script src="script.js"></script>
 </body>
-
 </html>
