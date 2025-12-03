@@ -1,12 +1,10 @@
-# 🌸 Ikram El Hilali — Software Engineer Portfolio
-
+# Ikram El Hilali — Software Engineer Portfolio
 Welcome to my personal developer portfolio!  
 This website presents my professional journey, projects, skills, and contact details — all in a modern and elegant web interface.
 
 ## 🛠️ Built With
 - HTML  
-- CSS  
-- JavaScript  
+- CSS
 
 ## ✨ Features
 - Modern and elegant design  
