@@ -1,204 +1,198 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ikram El Hilali — Software Engineer</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="assets/logo ikram.png">
+
+  <title>Portfolio</title>
 </head>
 
 <body>
-  <div class="wrap">
-    <nav>
-      <h4>Ikram El Hilali</h4>
-      <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#work">Work</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
-        <a class="cta" href="#download">Download CV 📥</a>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">
+      <a href="/">El Hilali Ikram</a>
+    </div>
+
+    <!-- <div class="right">
+      
+    </div> -->
+    <div class="right">
+      <a href="#skills">
+        <i class="fa-solid fa-code"></i>
+        <span>Skills</span>
+      </a>
+      <a href="#testimony">
+        <i class="fa-solid fa-pen"></i>
+        <span>Projects</span>
+      </a>
+      <a href="#contact">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Contact</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: Hero -->
+    <section class="hero-section">
+      <div class="text">
+        <h2>Hi, I'm Ikram 👋</h2>
+        <p>A passionate Software Engineer with a strong foundation in AL development, Dynamics 365
+          customization, and modern web technologies. I enjoy transforming complex business needs into clean,
+          scalable, and maintainable solutions. Whether I’m developing Business Central extensions, optimizing backend
+          logic, or crafting intuitive user experiences, I always aim for quality, clarity, and impact. I am
+          continuously learning, improving, and building technology that makes processes smarter and businesses more
+          efficient.</p>
+
+        <div class="links">
+          <a href="https://github.com/Ikramelhilali" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+            <span>Github</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/ikram-el-hilali-537a8724b/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>Linkedin</span>
+          </a>
+
+          <a href="mailto:ikramelhilali21@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Email</span>
+          </a>
+        </div>
+
       </div>
-    </nav>
+      <div class="headshot">
+        <img src="assets/ikram.jpg" alt="john doe headshot">
+      </div>
+    </section>
 
-    <main class="grid">
-      <section id="home" class="hero">
-        <div class="hero-left">
-          <img class="avatar" src="assets/ikram.jpg" alt="Ikram El Hilali">
-          <div class="muted">Software Engineer — Consultante Technique · Dynamics 365 · Web Apps</div>
+    <!-- SECTION 2: Skills -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="cells">
+        <div class="cell">
+          <img src="assets/html logo.png" alt="html logo">
+          <span>HTML</span>
         </div>
-        <div class="hero-right">
-          <h2 class="title">Hello — <span class="accent">I'm Ikram</h2>
-          <p class="sub">A passionate Software Engineer with a strong foundation in AL development, Dynamics 365
-            customization, and modern web technologies. I enjoy transforming complex business needs into clean,
-            scalable, and maintainable solutions. Whether I’m developing Business Central extensions, optimizing backend
-            logic, or crafting intuitive user experiences, I always aim for quality, clarity, and impact. I am
-            continuously learning, improving, and building technology that makes processes smarter and businesses more
-            efficient.</p>
+
+        <div class="cell">
+          <img src="assets/css.webp" alt="css logo">
+          <span>CSS</span>
         </div>
-      </section>
-      <section>
-        <div class="stats-buttom" aria-hidden="true">
-          <div class="stat"><b>1</b><span class="muted"> Years and 4 months of experience.</span></div>
-          <div class="stat"><b>4</b><span class="muted"> Projects.</span></div>
-          <div class="stat"><b>20</b><span class="muted"> Technologies.</span></div>
+
+        <div class="cell">
+          <img src="assets/js.webp" alt="javascript logo">
+          <span>JavaScript</span>
         </div>
-      </section>
-      <section id="services">
-        <h2>Services</h2>
-        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;">
-          <div class="project">Business & Dynamics 365 Services</div>
-          <div class="project">UI/UX Design</div>
-          <div class="project">Web & App Development</div>
-          <div class="project">Technical Solutions & Support</div>
+
+        <div class="cell">
+          <img src="assets/nodejs.webp" alt="node logo">
+          <span>Node.js</span>
         </div>
-      </section>
 
-      <section id="resume">
-        <h2>Experience</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-date">Jul 2024 — Present</div>
-            <div class="timeline-body">
-              <b>Consultante Technique — Dynamics 365 (Prodware)</b>
-              <div class="muted">Customizations, JS → Plugins, AL reporting</div>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">Apr 2024 — May 2024</div>
-            <div class="timeline-body">
-              <b>Web Developer — ELHALLAOUI SARL</b>
-              <div class="muted">Frontend & small backend features</div>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">Aug 2023 — Sep 2023</div>
-            <div class="timeline-body">
-              <b>Web Developer — Fondation Attawfiq</b>
-              <div class="muted">Internship and small projects</div>
-            </div>
-          </div>
-
+        <div class="cell">
+          <img src="assets/vuejs.webp" alt="vue logo">
+          <span>Vue.js</span>
         </div>
-      </section>
 
-      <section id="work">
-        <h2>Projects</h2>
-        <div class="projects">
-          <article class="project">
-            <h3 style="margin:0 0 6px">Caftan Oriental — Web App</h3>
-            <p class="muted" style="margin:0">Next.js + Node + PHP API · Inventory & Booking</p>
-          </article>
-          <article class="project">
-            <h3 style="margin:0 0 6px">Dynamics 365 Customizations</h3>
-            <p class="muted" style="margin:0">Plugins, JS form logic, AL reports</p>
-          </article>
-          <article class="project project-full" style="grid-column:span 2">
-            <h3 style="margin:0 0 6px">UX Cases & Small Tools</h3>
-            <p class="muted" style="margin:0">Design experiments and internal tools</p>
-          </article>
+        <div class="cell">
+          <img src="assets/c.webp" alt="C logo">
+          <span>C</span>
         </div>
-      </section>
 
-      <section>
-        <h2>Education</h2>
-        <div class="timeline">
-
-          <div class="timeline-item">
-            <div class="timeline-date">Nov 2025 — Jun 2026</div>
-            <div class="timeline-body"><b>Licence Diploma — Computer Science</b>
-              <div class="muted">Faculty of Science Ain Chock</div>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">Oct 2022 — 2024</div>
-            <div class="timeline-body"><b>DUT — Computer Engineering</b>
-              <div class="muted">ESTM</div>
-            </div>
-          </div>
-
+        <div class="cell">
+          <img src="assets/OIP.webp" alt="C# logo">
+          <span>C#</span>
         </div>
-      </section>
 
-      <section>
-        <h2>Skills</h2>
-        <div class="skills">
-          <div class="skill">AL</div>
-          <div class="skill">Dynamics 365</div>
-          <div class="skill">JavaScript</div>
-          <div class="skill">React / Next.js</div>
-          <div class="skill">HTML & CSS</div>
-          <div class="skill">PHP & MySQL</div>
-          <div class="skill">SQL</div>
-          <div class="skill">UX / UI Design</div>
+        <div class="cell">
+          <img src="assets/java.webp" alt="java logo">
+          <span>Java</span>
         </div>
-      </section>
 
-      <section>
-        <div class="card">
-          <h3 style="margin-top:0">Contact</h3>
-          <p class="muted">Open for internships & junior-mid roles</p>
-          <form id="contactForm" class="contact-form" onsubmit="handleContact(event)">
-            <input required name="name" placeholder="Your name" type="text">
-            <input required name="email" placeholder="Your email" type="email">
-            <select name="service" id="service" required>
-              <option value="" disabled selected hidden>Choose a service</option>
-              <option value="d365">Dynamics 365 Consulting</option>
-              <option value="web">Web & App Development</option>
-              <option value="uiux">UI/UX Design</option>
-            </select>
-            <textarea name="message" placeholder="Type your message..."></textarea>
-            <div style="display:flex;gap:55px;margin-top:6px">
-              <button class="btn" type="submit">Send message</button>
-              <a class="btn" id="download" href="assets/Ikram_CV.pdf">Download CV</a>
-            </div>
-          </form>
-          <div class="contact-list">
-
-            <div class="contact-item">
-              <strong>Phone</strong>
-              <br>
-              0711708435
-            </div>
-
-            <div class="contact-item">
-              <strong>Email</strong>
-              <br>
-              <a href="mailto:ikramelhilali21@gmail.com">
-                ikramelhilali21@gmail.com
-              </a>
-            </div>
-
-            <div class="contact-item">
-              <strong>GitHub</strong>
-              <br>
-              <a href="https://github.com/Ikramelhilali" target="_blank">
-                github.com/Ikramelhilali
-              </a>
-            </div>
-
-            <div class="contact-item">
-              <strong>LinkedIn</strong>
-              <br>
-              <a href="https://www.linkedin.com/in/ikram-el-hilali-537a8724b/" target="_blank">
-                linkedin.com/in/ikram-el-hilali
-              </a>
-            </div>
-          </div>
+        <div class="cell">
+          <img src="assets/crm d365.png" alt="CRM & BC d365 logo">
+          <span>CRM & BC d365</span>
         </div>
-      </section>
-    </main>
-    <footer>
-      Designed by El Hilali Ikram • © <span id="year"></span>
-    </footer>
-  </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Testimony -->
+    <section id="testimony" class="testimony-section">
+      <h2>Projects</h2>
+
+      <div class="group">
+        <div class="person-details">
+          <img src="assets/logo sport.PNG">
+          <p>Gym Management Website</p>
+          <p>🔒 Private</p>
+        </div>
+        <div class="text">
+          This is a project that manages all aspects related to a gym, including members, trainers, and equipment. It
+          also provides interfaces that present the gym in an attractive way and motivate people to join the gym.
+        </div>
+      </div>
+
+      <br>
+
+      <div class="group">
+        <div class="person-details">
+          <img src="assets/Mood.png">
+          <p>Moodie – Android Mobile App</p>
+          <p>🔓 Public</p>
+        </div>
+        <div class="text">
+          Moodie is a Flutter-based mobile application designed to help users track their daily moods through an
+          intuitive emoji system. It features personalized mood messages, local mood history storage with date and time,
+          and a clean, responsive user interface focused on simplicity and user experience.
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Contact -->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+
+      <div class="group">
+        <div class="text">
+          <br><br><br>
+          📞 +212 711-708435
+          <br><br><br>
+          📥 ikramelhilali21@gmail.com
+          <br><br><br>
+          📍 Casablanca, Maroc
+        </div>
+
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email">
+
+          <label for="message">Message</label>
+          <textarea id="message" cols="30" rows="10"></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>
