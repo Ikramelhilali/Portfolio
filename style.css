@@ -1,6 +1,7 @@
 /* --- Global Styles --- */
 :root {
-  --primary-color: #6366f1; /* Modern Indigo */
+  --primary-color: #6366f1;
+  /* Modern Indigo */
   --text-main: #1f2937;
   --text-muted: #4b5563;
   --bg-color: #ffffff;
@@ -23,7 +24,8 @@ body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
   color: var(--text-main);
-  background-color: var(--bg-color);
+  /* background-color: var(--bg-color); */
+  background-color: transparent;
 }
 
 a {
@@ -37,7 +39,8 @@ ul {
 }
 
 section {
-  padding: 80px 10% ;
+  padding: 80px 10%;
+  background-color: transparent !important;
 }
 
 h2 {
@@ -110,6 +113,7 @@ nav .right a:hover {
 
 .hero-section .text {
   flex: 1;
+  text-align: justify;
 }
 
 .hero-section h2 {
@@ -150,9 +154,14 @@ nav .right a:hover {
   width: 350px;
   height: 350px;
   object-fit: cover;
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; /* Organic shape */
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  /* Organic shape */
   background: var(--primary-color);
   box-shadow: 0 20px 40px rgba(99, 102, 241, 0.2);
+  border: solid 4px white;
+}
+.hero-section .headshot img:hover {
+  transform: scale(1.05);
 }
 
 /* --- Skills Section --- */
@@ -193,7 +202,7 @@ nav .right a:hover {
 .cell img {
   width: 50px;
   height: 50px;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
   transition: var(--transition);
 }
 
@@ -234,7 +243,8 @@ nav .right a:hover {
 }
 
 .testimony-section .text {
-  font-style: italic;
+  /* font-style: italic; */
+  text-align: justify;
   font-size: 1.1rem;
   position: relative;
 }
@@ -256,7 +266,8 @@ form {
   gap: 15px;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 15px;
   border: 1px solid var(--border-color);
   border-radius: 8px;
@@ -264,7 +275,8 @@ input, textarea {
   outline: none;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   border-color: var(--primary-color);
   box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
 }
@@ -287,14 +299,18 @@ button:hover {
 
 /* --- Responsive Design --- */
 @media (max-width: 768px) {
-  .hero-section, .contact-section .group, .testimony-section .group {
+
+  .hero-section,
+  .contact-section .group,
+  .testimony-section .group {
     flex-direction: column;
     grid-template-columns: 1fr;
     text-align: center;
   }
 
   nav .right {
-    display: none; /* Hide nav on mobile or use a hamburger menu */
+    display: none;
+    /* Hide nav on mobile or use a hamburger menu */
   }
 
   .hero-section .headshot img {
@@ -305,4 +321,25 @@ button:hover {
   .hero-section .links {
     justify-content: center;
   }
+}
+
+/* --- Background Animation Styles --- */
+.animation_bg {
+  position: fixed; /* Fixes it to the viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Puts it behind all content */
+  overflow: hidden;
+  background-color: var(--bg-color);
+  pointer-events: none; /* Allows you to click links through the background */
+}
+
+.animation_bg img {
+  position: absolute;
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  opacity: 0.15; /* Makes it subtle so text is readable */
+  transition: transform 0.1s linear;
 }
